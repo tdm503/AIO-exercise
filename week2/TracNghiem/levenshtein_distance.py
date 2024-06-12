@@ -1,4 +1,4 @@
-def levenshtein_distance(source, target) -> float:
+def levenshtein_distance(source, target):
     source_len = len(source)
     target_len = len(target)
     source = "#" + source
@@ -19,5 +19,5 @@ def levenshtein_distance(source, target) -> float:
     return matrix[source_len][target_len]
 
 
-assert levenshtein_distance('hi', 'hello') == 4.0
+assert levenshtein_distance('hi', 'hello') == 4
 print(levenshtein_distance('hola', 'hello'))
