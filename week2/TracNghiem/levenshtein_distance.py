@@ -1,4 +1,4 @@
-def levenshtein_distance(source, target):
+def levenshtein_distance(source, target) -> float:
     source_len = len(source)
     target_len = len(target)
     source = "#" + source
