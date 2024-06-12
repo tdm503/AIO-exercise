@@ -19,5 +19,5 @@ def levenshtein_distance(source, target):
     return matrix[source_len][target_len]
 
 
-assert levenshtein_distance('hi', 'hello') == 4.0
+assert levenshtein_distance('hi', 'hello') == 4
 print(levenshtein_distance('hola', 'hello'))
