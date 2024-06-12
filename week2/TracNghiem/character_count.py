@@ -3,8 +3,9 @@ def character_count(word):
     for char in word:
         if char in char_count:
             char_count[char] += 1
-        else :
+        else:
             char_count[char] = 1
     return char_count
+
 
 print(character_count('smiles'))
