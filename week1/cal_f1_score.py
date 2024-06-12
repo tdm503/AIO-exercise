@@ -1,9 +1,11 @@
 import math
 
-def is_int(n):
-    return isinstance(n,int)
 
-def calc_f1_score(tp,fp,fn):
+def is_int(n):
+    return isinstance(n, int)
+
+
+def calc_f1_score(tp, fp, fn):
     if not is_int(tp):
         print("tp must be int")
         return
@@ -21,8 +23,9 @@ def calc_f1_score(tp,fp,fn):
     f1_score = 2 * (precision * recall)/(precision + recall)
     return f1_score
 
-#Test
-test1 = calc_f1_score(2,3,4)
-test2 = calc_f1_score('a',2,3)
-test3 = calc_f1_score(-4,2,1)
+
+# Test
+test1 = calc_f1_score(2, 3, 4)
+test2 = calc_f1_score('a', 2, 3)
+test3 = calc_f1_score(-4, 2, 1)
 print(f"{test1} {test2} {test3}")

@@ -1,4 +1,6 @@
 import gdown
+
+
 def count_word(path):
     with open(path, 'r') as file:
         content = file.read()
@@ -7,9 +9,10 @@ def count_word(path):
     for word in words:
         if word in word_count:
             word_count[word] += 1
-        else :
+        else:
             word_count[word] = 1
     return word_count
+
 
 url = 'https://drive.google.com/uc?id=1IBScGdW2xlNsc9v5zSAya548kNgiOrko'
 output = 'P1_data.txt'

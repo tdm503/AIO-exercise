@@ -1,7 +1,7 @@
-def my_function(data,max,min):
+def my_function(data, max, min):
     result = []
-    for i in data :
-        if i < min :
+    for i in data:
+        if i < min:
             result.append(min)
         elif i > max:
             result.append(max)
@@ -9,12 +9,13 @@ def my_function(data,max,min):
             result.append(i)
     return result
 
-my_list = [5,2,5,0,1]
+
+my_list = [5, 2, 5, 0, 1]
 max = 1
 min = 0
-assert my_function(max = max,min = min,data = my_list) == [1,1,1,0,1]
+assert my_function(max=max, min=min, data=my_list) == [1, 1, 1, 0, 1]
 
-my_list = [10,2,5,0,1]
-max = 2 
-min = 1 
-print(my_function(max = max,min = min,data = my_list))
+my_list = [10, 2, 5, 0, 1]
+max = 2
+min = 1
+print(my_function(max=max, min=min, data=my_list))

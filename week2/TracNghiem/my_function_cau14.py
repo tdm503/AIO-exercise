@@ -4,5 +4,6 @@ def my_function(x):
         res += x[i]
     return res
 
+
 x = 'apricot'
 print(my_function(x))
